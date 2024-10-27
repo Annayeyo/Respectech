@@ -1,49 +1,134 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+}
+/* header styling */
+.header {
+    
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    /* color: black; Text color */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; /* Transform text to uppercase */
+    
 }
 
-/* Header styling */
-h1 {
+.logo {
+    font-size: 50px; /* Logo size */
+}
+/* nav styling */
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display list items in a row */
+}
+
+.navbar li {
+    margin: 0 50px; /* Spacing between nav items */
+}
+
+.navbar a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-family: Georgia;
+}
+/* button styling */
+.cta-button {
+    padding: 10px 20px; /* Button padding */
+    background-color: red; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Button text color */
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; /* Transform text to uppercase */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.cta-button:hover {
+    background-color: red; /* Darker red on hover */
+}
+/* Heading styling */
+.heading{
+    background-image: url('img/software-dev.jpg'); /* Path to your image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    height: 400px; /* Set a height for the section */
+    color: white; /* Text color for better visibility */
+    display: flex; /* Center content */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+
+}
+
+/* To style and make the heading move */
+.moving-sentence {
     text-align: center;
-    color: #2c3e50;
     font-size: 2.5rem;
     margin: 20px 0;
+    font-family: Georgia;
+    animation: moveSentence 5s linear infinite; /* Animation properties */
 }
 
-/* Image styling */
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+@keyframes moveSentence {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(300px); /* End position */
+    }
 }
 
-/* Links styling */
-a {
-    text-decoration: none;
-    color: #2980b9;
-    font-weight: bold;
-    margin: 0 15px;
-    font-size: 1.2rem;
+/* row styling */
+.subheading {
+    text-align: center; /* Center text in header */
+    padding: 20px; /* Padding around header */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.row {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    padding: 20px; /* Padding around the container */
 }
 
-a:hover {
-    color: #e74c3c;
+.column {
+    flex: 1; /* Each column takes equal space */
+    margin: 0 10px; /* Margin between columns */
+    text-align: center; /* Center text in each column */
+}
+.image {
+    width: 200px; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.image-small{
+    width: 400px; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 60px;
 }
 
+h3 {
+    margin: 10px 0; /* Margin above and below headings */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: #555; /* Gray color for paragraphs */
+}
+.button{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 /* Section styling */
 .wp-block-group__inner-container {
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
+    padding: 30px 50px;
+    background-color: papayawhip;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -115,4 +200,3 @@ footer p {
     margin: 0;
     font-size: 1rem;
 }
-Key Features:
